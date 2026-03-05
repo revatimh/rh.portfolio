@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fountain of Compassion Case Study</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="focrevamp.css">
+</head>
+
+<body>
+
+  <!-- Navigation - PASTE THIS RIGHT AFTER <body> TAG -->
+  <nav class="project-nav">
+    <div class="project-nav-container">
+      <a href="index.html" class="nav-logo">RH</a>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="mainbox">
+        <div class="hero-meta">UX Design Lead • 4 months • Team of 2</div>
+        <h1>Fountain of Compassion</h1>
+        <h2>Redesigning a Church Website for Global Ministry</h2>
+      </div>
+    </div>
+  </header>
+
+  <div class="mainbox">
+    <!-- Problem Section -->
+    <section class="section">
+      <div class="container">
+        <h3 class="section-label">The Problem</h3>
+        <div class="problem-content">
+          <p class="lead">Fountain of Compassion is a church in India, which is serving a global audience across India,
+            North America, and parts of Africa through YouTube and TV broadcasts. </p>
+          <p>Their website had grown organically over years without structure. Content was unorganized, navigation was
+            inconsistent, and the experience failed to meet users' expectations. Church leadership needed a redesign to
+            serve a primarily young, smartphone first audience consuming spiritual content globally.</p>
+        </div>
+
+        <div class="research-question">
+          <span class="label">Research Goal</span>
+          <p>Redesign the website to support mobile first usage, improve content discoverability for global audiences,
+            and create a scalable structure that serves local members, digital viewers, and international followers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Approach -->
+    <section class="section">
+      <div class="container">
+        <h3 class="section-label">Research Approach</h3>
+
+        <p class="intro-text">Before designing anything, I needed to understand the users, how they accessed the
+          website, and what was their opinion.</p>
+
+        <div class="methodology-list">
+          <div class="method-item">
+            <div class="method-number">1</div>
+            <div class="method-content">
+              <h4>Survey Responses</h4>
+              <p>Collected data from 30+ users on visit frequency, content preferences, pain points, and their
+                suggestions</p>
+            </div>
+          </div>
+
+          <div class="method-item">
+            <div class="method-number">2</div>
+            <div class="method-content">
+              <h4>Heuristic Evaluation</h4>
+              <p>Conducted a systematic assessment of the existing website using Nielsen's principles to identify
+                structural usability failures</p>
+            </div>
+          </div>
+
+          <div class="method-item">
+            <div class="method-number">3</div>
+            <div class="method-content">
+              <h4>Stakeholder Inputs</h4>
+              <p>Met with church leadership to understand ministry priorities, concerns, suggestions and content
+                requirements</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Findings -->
+    <section class="section">
+      <div class="container">
+        <h3 class="section-label">Key Findings</h3>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <div class="finding-stat">1</div>
+            <div class="finding-content">
+              <h4>Mobile first audience</h4>
+              <p>73% users access the webssite via smartphones. The existing layout was not optimized for small screens,
+                affecting usability and navigation flow.</p>
+            </div>
+          </div>
+
+          <div class="finding-item">
+            <div class="finding-stat">2</div>
+            <div class="finding-content">
+              <h4>Infrequent Engagement</h4>
+              <p>74% visit rarely or occasionally. Users value content but lack structured pathways for consistent
+                return visits.</p>
+            </div>
+          </div>
+
+          <div class="finding-item">
+            <div class="finding-stat">3</div>
+            <div class="finding-content">
+              <h4>Content Demand Clarity</h4>
+              <p>Top requests were sermon videos, daily devotions, and worship music. These were difficult to locate in
+                the previous structure.</p>
+            </div>
+          </div>
+
+          <div class="finding-item">
+            <div class="finding-stat">4</div>
+            <div class="finding-content">
+              <h4>Structural Usability Gaps</h4>
+              <p>Navigation inconsistency, no form validation, outdated content visibility, and homepage overload
+                reduced clarity and confidence.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Survey Insights Visual -->
+        <div style="margin-top: 4rem;">
+          <h4 style="margin-bottom: 2rem; font-size: 1.25rem;">Survey Insights</h4>
+          <div class="image-placeholder">
+            <img src="images/foc-survey-insights.png"
+              alt="Survey analysis showing 73% smartphone usage, 47% age 21-35, key content priorities"
+              style="width: 100%; height: auto;">
+          </div>
+          <p style="margin-top: 1rem; color: var(--text-gray); font-size: 0.9375rem;">Key metrics: 73% smartphone usage,
+            47% age 21-35, 70% from India, 74% rare/occasional visitors, top content: sermons (23), devotions (20),
+            music (19)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personas Section -->
+    <section class="section">
+      <div class="container">
+        <h3 class="section-label">Understanding the Users</h3>
+        <p class="intro-text">Based on survey data and ministry reach, I developed three personas representing distinct
+          needs and constraints.</p>
+
+        <div class="persona-container">
+          <div class="image-placeholder">
+            <img src="images/foc-persona-rajesh.png" alt="Persona: Rajesh, Local Chennai Member"
+              style="width: 100%; height: auto;">
+          </div>
+          <p style="margin-top: 1rem; color: var(--text-gray);">Age 38, IT professional, regular church volunteer. Needs
+            quick access to service times, events, and giving options. Uses Android smartphone during lunch breaks.</p>
+        </div>
+
+        <div class="persona-container" style="margin-top: 3rem;">
+          <div class="image-placeholder">
+            <img src="images/foc-persona-marcus.png" alt="Persona: Marcus, North American Diaspora"
+              style="width: 100%; height: auto;">
+          </div>
+          <p style="margin-top: 1rem; color: var(--text-gray);">Age 29, software developer in Texas, discovered church
+            through YouTube. Consumes long form content on weekends. Needs culturally relevant teaching and virtual
+            community.</p>
+        </div>
+
+        <div class="persona-container" style="margin-top: 3rem;">
+          <div class="image-placeholder">
+            <img src="images/foc-persona-grace.png" alt="Persona: Grace, Kenya TV Viewer"
+              style="width: 100%; height: auto;">
+          </div>
+          <p style="margin-top: 1rem; color: var(--text-gray);">Age 45, headteacher in Nairobi, leads women's Bible
+            study. Operates under data limitations. Needs downloadable content and offline access for group sharing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Focus -->
+    <section class="section">
+      <div class="container">
+        <h3 class="section-label">Where to Focus</h3>
+        <div class="focus-box">
+          <p class="lead">The church operates physically in India, but serves local members, North American viewers
+            through YouTube, and TV followers in African regions.</p>
+          <p>The work was now focused on designing a mobile-first structure prioritizing sermon discovery, devotional
+            access, and simplified navigation while supporting global accessibility and ministry scalability.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="section">
+      <div class="container">
+        <h3 class="section-label">The Solution</h3>
+
+        <div class="solution-components">
+
+          <!-- Component 01: Sitemap -->
+          <div class="component">
+            <div class="component-number">01 SITEMAP</div>
+            <p>The original website had mixed all the info on the first page. Users found it very difficult to navigate. I
+              reorganized around defined domains based on survey priorities and ministry requirements:</p>
+
+            <div class="component-detail" style="margin-top: 2rem;">
+              <strong>The Suggested Site Structure:</strong>
+              <ul style="margin-top: 1rem;">
+                <li>Home</li>
+                <li>About</li>
+                <li>Church Life</li>
+                <li>Word and Media</li>
+                <li>Outreach</li>
+                <li>Prayer</li>
+                <li>Give</li>
+                <li>Resources</li>
+                <li>Contact</li>
+                <li>Structure reflects survey content priorities</li>
+                <li>Dedicated sections reduce cross-category confusion</li>
+              </ul>
+              <div class="image-placeholder" style="margin-top: 2rem;">
+                <img src="images/foc/Sitemap.png" alt="new sitemap showing clear content hierarchy"
+                  style="width: 100%; height: auto;">
+              </div>
+            </div>
+          </div>
+
+          <!-- Component 02: IA -->
+          <div class="component">
+            <div class="component-number">02 INFORMATION ARCHITECTURE</div>
+            <p>This assumed sitemap was later discussed with the church authorities. They suggested a few changes. Based on that, I restructured the sitemap into a functioning IA:</p>
+              
+            <div class="component-detail" style="margin-top: 2rem;">
+              <strong>New Structure:</strong>
+              <ul style="margin-top: 1rem;">
+                <li>Defined seven primary sections: Home, About, Services, Ministries, Resources, Donate, Contact</li>
+                <li>Standardized internal structure with consistent hero banners and section hierarchy</li>
+                <li>Grouped weekly, monthly, and online services under a single Services section</li>
+                <li>Consolidated outreach programs under Ministries for clearer impact visibility</li>
+                <li>Centralized sermons, devotions, books, and help resources under Resources</li>
+                <li>Separated Donate and Contact into focused, action-driven sections</li>
+              </ul>
+              <div class="image-placeholder" style="margin-top: 2rem;">
+                <img src="images/foc/ia.png" alt="Reorganized IA showing clear content hierarchy"
+                  style="width: 100%; height: auto;">
+              </div>
+            </div>
+          </div>
+
+          <!-- Component 03: Content and Design Strategy -->
+          <div class="component">
+            <div class="component-number">03 Content and Design Strategy</div>
+            <p>Once the structure of the website was ready, I began planning content and design specifications:</p>
+            <div class="component-grid">
+
+            <div class="component-detail" style="margin-top: 2rem;">
+              <p><strong>Content Strategy</strong></p> 
+              <ul>
+                <li>Featured sermon series organized by topic</li>
+                <li>Daily devotion section updated regularly</li>
+                <li>Worship music grouped within media library</li>
+                <li> Visual showcase of feeding programs, education, prayer requests</li>
+                <li>Resource hub for books and newsletters</li>
+                <li>Monthly updates on events, and ministry impact</li>
+              </ul>
+            </div>
+
+            <div class="component-detail" style="margin-top: 2rem;">
+              <p><strong>Design Priorities</strong></p>
+              <ul>
+                <li>Mobile-first layout and vertical scanning</li>
+                <li>Clear call-to-action visibility</li>
+                <li>Reduced cognitive load across homepage</li>
+                <li>Consistent navigation presence</li>
+                <li>Updated and structured content presentation</li>
+                <li>Lightweight structure for varied environments</li>
+              </ul>
+            </div>
+            </div>
+          </div>
+
+          <!-- Component 04: User Flows -->
+          <div class="component">
+            <div class="component-number">04 user flow</div>
+            <p>A userflow was created to understand the accessibility of the website. It has clear entry points, logical branching, and visible completion states.</p>
+
+            <div class="component-detail" style="margin-top: 2rem;">
+              <ul style="margin-top: 1rem;">
+                <li>Finding service times</li>
+                <li>Watching sermon series</li>
+                <li>Submitting prayer requests</li>
+                <li>Making online donations</li>
+                <li>Accessing global streaming links</li>
+                <li>Navigating outreach initiatives</li>
+              </ul>
+
+              <div style="margin-top: 2rem;">
+              <div class="image-placeholder">
+                <img src="images/foc/Userflow.png" alt="User flow diagram showing primary journeys"
+                  style="width: 100%; height: auto;">
+              </div>
+            </div>
+            </div>
+
+
+          </div>
+
+          <!-- Component 05: Design System -->
+          <div class="component">
+            <div class="component-number">05 visual components</div>
+            <p>A guideline of visual components and brand colors was defined to keep the whole structure uniform.</p>
+
+            <div class="component-detail" style="margin-top: 2rem;">
+              <ul style="margin-top: 1rem;">
+                <li>Unified color hierarchy aligned with church branding</li>
+                <li>Consistent typography pairing for clarity</li>
+                <li>Structured spacing using 8-point rhythm</li>
+                <li>Standardized button and link styles</li>
+                <li>Consistent content card layouts</li>
+              </ul>
+            <div style="margin-top: 2rem;">
+              <div class="image-placeholder">
+                <img src="images/foc/design-system.png"
+                  alt="Design system showing colors, typography, spacing, components"
+                  style="width: 100%; height: auto;">
+              </div>
+            </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Screens -->
+    <section class="section">
+      <div class="container">
+        <h3 class="section-label">Key Screens</h3>
+
+        <!-- Homepage -->
+        <div class="screen-showcase">
+          <h4>Homepage</h4>
+          <p>Featured video at top, daily devotion section, quick links to sermons and events, social service
+            highlights, social media integration. Reduces cognitive overload while surfacing primary content
+            immediately.</p>
+          <div class="screen-images">
+            <div class="component-grid">
+            <div class="image-placeholder">
+              <img src="images/foc/deskhome.png" alt="Desktop homepage design"
+                style="width: 100%; height: auto;"> <p style="text-align: center; padding-top: 2rem;">Desktop homepage design</p>
+            </div> 
+            <div class="image-placeholder">
+              <img src="images/foc/mobHome2.png" alt="Mobile homepage design" style="width: 100%; height: auto;"><p style="text-align: center; padding-top: 2rem;">Mobile homepage design</p>
+            </div> 
+          </div>
+          </div>
+        </div>
+
+        <!-- Word & Media -->
+        <div class="screen-showcase">
+          <h4>Other Pages</h4>
+          <p>Some more sample page designs</p>
+          <div class="screen-images">
+            <div class="component-grid">
+            <div class="image-placeholder">
+              <img src="images/foc/deskministries.png" alt="Desktop homepage design"
+                style="width: 100%; height: auto;"> <p style="text-align: center; padding-top: 2rem;">Desktop "Our Ministries" page design</p>
+            </div> 
+            <div class="image-placeholder">
+              <img src="images/foc/mobDonate.png" alt="Mobile homepage design" style="width: 100%; height: auto;"><p style="text-align: center; padding-top: 2rem;">Mobile "Donate" page design</p>
+            </div> 
+          </div>
+          </div>
+        </div>
+
+        <!-- Figma Links -->
+        <div style="margin-top: 4rem; text-align: center;">
+          <div style="display: flex; gap: 17rem; justify-content: center; flex-wrap: wrap;">
+            <a href="YOUR_DESKTOP_FIGMA_LINK" target="_blank"
+              style="display: inline-block; padding: 1.25rem 2.5rem; background: var(--neo-blue); color: white; text-decoration: none; font-weight: 700; border: 3px solid var(--text-black); transition: all 0.2s ease;">View
+              Desktop Prototype →</a>
+            <a href="YOUR_MOBILE_FIGMA_LINK" target="_blank"
+              style="display: inline-block; padding: 1.25rem 2.5rem; background: var(--neo-blue); color: white; text-decoration: none; font-weight: 700; border: 3px solid var(--text-black); transition: all 0.2s ease;">View
+              Mobile Prototype →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="section">
+      <div class="container">
+        <h3 class="section-label">impact</h3>
+
+        <div class="validation-split">
+          <div class="validation-box">
+            <p>The redesigned website is now live and actively serving the church’s global community.</p>
+            <p>For users, the experience is easier to navigate on mobile devices, spiritual content is easier to discover, and key actions such as prayer requests and giving feel more straightforward.</p>
+            <p>For the church, the new structure supports consistent updates, integrates seamlessly with YouTube and broadcast platforms, and presents a modern, organized digital presence that reflects its growth.</p>
+
+             <a href="https://fountainofcompassion.org/index.php" target="_blank"
+              style="display: inline-block; margin-top: 3rem; padding: 1.25rem 2.5rem; background: var(--neo-blue); color: white; text-decoration: none; font-weight: 700; border: 3px solid var(--text-black); transition: all 0.2s ease;">View
+              Live Site →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="section">
+      <div class="container">
+        <h3 class="section-label">HOW TO MEASURE SUCCESS</h3>
+            <div class="metrics-section">
+          <div class="metrics-list">
+            <span class="metric">Mobile engagement and bounce rates</span>
+            <span class="metric">Sermon video views originating from website clicks</span>
+            <span class="metric">Prayer request submissions</span>
+            <span class="metric">Online giving conversions</span>
+            <span class="metric">Newsletter signups</span>
+            <span class="metric">Return visitor frequency</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Limitations -->
+    <section class="section">
+      <div class="container">
+        <h3 class="section-label">Limitations</h3>
+
+        <div class="limitations-list">
+          <div class="limitation-box">
+            <h4>Post Launch Testing</h4>
+            <p>The redesign was based on survey data (30 respondents) and heuristic evaluation. Post launch usability
+              testing with actual users across different regions, particularly testing with Kenya followers under real
+              bandwidth constraints, would validate architecture decisions and reveal region specific friction points.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflection -->
+    <section class="section">
+      <div class="container">
+        <h3 class="section-label">Reflection</h3>
+        <div class="reflection-content">
+          <p class="lead">This project reinforced that digital platforms serving global audiences must be designed with clarity and flexibility at their core.</p>
+          <p>The redesign was less about visual reinvention and more about alignment. Aligning structure with behavior. Aligning content with demand. Aligning interface decisions with real constraints.</p>
+          <p class="reflection-conclusion">That shift from page design to ecosystem thinking shaped the entire project.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Smooth scroll reveal
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.section').forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+
+</html>
