@@ -5,7 +5,7 @@
   right: 0;
   z-index: 1000;
   background: var(--bg-white);
-  border-bottom: 3px solid var(--text-black);
+  /* border-bottom: 3px solid var(--text-black); */
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
