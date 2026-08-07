@@ -24,6 +24,7 @@
   <!-- HERO -->
   <div class="hero-section">
       <div class="hero-left">
+        <span class="case-badge">UX Research &amp; Product Design</span>
         <h1 class="hero-name">Revati &nbsp;<em>Hardikar</em></h1>
         <p class="hero-role">UX Researcher &amp; Designer</p>
         <p class="hero-specialisms">Systems Thinking &nbsp;&bull;&nbsp; Accessibility &nbsp;&bull;&nbsp; Human-Centred Design</p>
@@ -58,9 +59,10 @@
 
   <!-- WORK -->
   <section id="work" class="work">
-    <h2 class="section-title">Selected Work</h2>
+    <h2 class="section-title reveal">Selected Work</h2>
 
-    <a href="lighthouse.html" class="project-featured">
+    <div class="project-grid">
+    <a href="lighthouse.html" class="project-featured reveal">
       <div class="project-img">
         <img src="images/UHNxEnvisAGE.jpg" alt="UHN x EnvisAGE Project">
       </div>
@@ -78,7 +80,7 @@
       </div>
     </a>
 
-      <a href="connectingflights.html" class="project-featured">
+      <a href="connectingflights.html" class="project-featured reveal reveal-delay-1">
         <div class="project-img">
           <img src="images/ConnectingFlights.jpg" alt="Connecting Flights case study">
         </div>
@@ -95,7 +97,7 @@
         </div>
       </a>
 
-      <a href="focrevamp.html" class="project-featured">
+      <a href="focrevamp.html" class="project-featured reveal reveal-delay-2">
         <div class="project-img">
           <img src="images/FoC.jpg" alt="Fountain of Compassion case study">
         </div>
@@ -111,11 +113,12 @@
           <span class="project-cta">View Case Study →</span>
         </div>
       </a>
+    </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
-    <div class="contact-inner">
+    <div class="contact-inner reveal">
       <div>
         <h2 class="contact-headline">Currently open to UX research and design opportunities.</h2>
         <p class="contact-sub">Interested in working together or just want to chat about design?</p>
@@ -142,6 +145,11 @@
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   </script>
 </body>
 </html>

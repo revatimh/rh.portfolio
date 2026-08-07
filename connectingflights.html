@@ -1,358 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connecting Flights Case Study</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <title>Connecting Flights - Case Study</title>
   <link rel="stylesheet" href="connectingflights.css">
 </head>
-
-
 <body>
 
-  <!-- Navigation -->
-<nav class="project-nav">
-  <div class="project-nav-container">
+  <nav>
     <a href="index.html" class="nav-logo">RH</a>
+    <a href="index.html#work" class="nav-back">← All Work</a>
+  </nav>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕ Close</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
   </div>
-</nav>
 
-    <!-- Hero Section -->
-
-    <header class="hero">
-      <div class="container">
-    <div class="mainbox">
-        <div class="hero-meta">UX Research Lead  •  8 months  •  Team of 5</div>
-        <h1>Connecting Flights</h1>
-        <h2>Understanding Passenger Rights and Flight Disruption Experiences</h2>
-   
-</div>
-</div>
- </header>
-<div class="container">
-  <div class="mainbox">
-
-    <!-- Roles Section -->
-   <section class="section">
-      
-        <h3 class="section-label">My Role</h3>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-label">Research Lead</div>
-            <div class="stat-detail">Qualitative and quantitative data collection, thematic analysis, insight synthesis</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-label">Design Lead</div>
-            <div class="stat-detail">System map, wireframes, website design</div>
-          </div>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <span class="case-badge">UX Research Project with CATR, NRC</span>
+        <h1 class="hero-title">Connecting &nbsp; Flights</h1>
+        <p class="hero-subtitle">Understanding Passenger Rights and Flight Disruption Experiences.</p>
+        <p class="hero-meta">UX Research Lead &amp; Design Lead &nbsp;·&nbsp; 8 Months &nbsp;·&nbsp; Team of 5</p>
+      </div>
+      <div class="hero-right">
+        <div class="video-box">
+          <video autoplay muted loop playsinline>
+            <source src="images/connecting-flights/Inform-Me-Ad.mp4" type="video/mp4">
+          </video>
         </div>
-      
-    </section>
+      </div>
+    </div>
+  </header>
 
-    <!-- Problem Section -->
-    <section class="section">
-        <h3 class="section-label">The Problem</h3>
-        <div class="problem-content">
-          <p class="lead">Most passengers are not aware of their rights as a passenger, especially during a flight disruption. The Air Passenger Protection Regulations exist, but people either have never read the regulations, or don't know what applies to their specific situation. Hence, there is a disconnect between what they expect, and what they recieve.</p>
-          <p>This creates a gap between what airlines are required to provide and what passengers think they can
-            claim.</p>
-        </div>
-
-        <div class="research-question">
-          <span class="label">Research Question</span>
-          <p>What are the factors contributing to the communication gap between the services provided to passengers and their expectations during disrupted connecting flights, particularly concerning passenger rights and compensation?</p>
-        </div>
-    </section>
-
-    <!-- Research Approach -->
-    <section class="section">
-        <h3 class="section-label">Research Approach</h3>
-        
-        <p  class="intro-text">This research followed a mixed-methods approach over 12 weeks.</p>
-        <p  class="intro-text">Surveys were used to collect the quantitative data. It helped in understanding common patterns, such as how often people missed connections, how aware they were of compensation rules, and where confusion was most common. </p> 
-        <p  class="intro-text">Interviews used to collect qualitative data. It helped in understanding people’s thinking during disruptions, including how they decided what to do next and why they felt unsure or frustrated. </p>
-          <p  class="intro-text">Using both together made it easier to see the bigger picture while also understanding the reasons behind people’s choices.</p>
-        
-        <div class="methodology-list">
-          <div class="method-item">
-            <div class="method-number">107</div>
-            <div class="method-content">
-              <h4>Survey Responses</h4>
-              <p>International economy travelers, 18-30 years old, had experienced disruptions</p>
-            </div>
-          </div>
-
-          <div class="method-item">
-            <div class="method-number">12</div>
-            <div class="method-content">
-              <h4>Passenger Interviews</h4>
-              <p>In-depth conversations about their experiences</p>
-            </div>
-          </div>
-
-          <div class="method-item">
-            <div class="method-number">4</div>
-            <div class="method-content">
-              <h4>Expert Interviews</h4>
-              <p>To understand the system through an SME's (Subject Matter Expert's) point of view</p>
-            </div>
-          </div>
-
-          <div class="method-item">
-            <div class="method-number">3</div>
-            <div class="method-content">
-              <h4>Validation Testing</h4>
-              <p>Tested concept with people who had experienced disruptions recently</p>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <!-- Key Findings -->
-    <section class="section">
-        <h3 class="section-label">Key Findings</h3>
-
-        <div class="findings-list">
-          <div class="finding-item">
-            <div class="finding-stat">1</div>
-            <div class="finding-content">
-              <h4>Passengers are not aware of their rights</h4>
-              <p> 76.1% passengers hadn't read the Air Passenger Protection Regulations. Airlines mention it in terms and conditions, but there is no  way to make sure passengers know what they're entitled to when things go wrong.
-              </p>
-            </div>
-          </div>
-
-          <div class="finding-item">
-            <div class="finding-quote">2</div>
-            <div class="finding-content">
-              <h4>The document of the regulations is difficult to understand</h4>
-              <p>People who tried to read the regulations described it as "reading a textbook." They wanted important points highlighted. The length and wording made it difficult to find the important information in the time of need.</p>
-            </div>
-          </div>
-
-          <div class="finding-item">
-            <div class="finding-stat">3</div>
-            <div class="finding-content">
-              <h4>People don't know if they qualify for compensation or not</h4>
-              <p>44.8% participants had no idea when they were entitled for compensation. Some think any disruption means compensation, but there are specific criterias for each case. Even when people suspect they might qualify, they don't know how to claim it.</p>
-            </div>
-          </div>
-
-          <div class="finding-item">
-            <div class="finding-quote">4</div>
-            <div class="finding-content">
-              <h4>Limited communication breaks trust</h4>
-              <p>Airlines can't always share full details about disruptions due to various limitations. Due to the insufficient communication about the disruptions and lack of context, passengers feel lack of trust towards the airlines.</p>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <!-- Problem Focus -->
-    <section class="section">
-        <h3 class="section-label">Where to Focus</h3>
-        <div class="focus-box">
-          <p class="lead">After learning about different factors involved, the focus was shifted on helping the passengers to be aware of their rights, their eligibility for compensation, and next steps to take when they face a disruption. They should get a clarity about the process.</p>
-          <p>Redesigning how airlines operate or rewriting the regulations was not necessary. The research discovered a gap and it was time to mend it.</p>
-        </div>
-    </section>
-
-    <!-- Solution -->
-    <section class="section">
-        <h3 class="section-label">The Solution</h3>
-        <h2 class="solution-title">Project Inform-Me-Right</h2>
-        <p>Project Inform-Me-Right is a website supported by airport awareness touchpoints. The goal is simple. Make passenger rights under APPR visible, understandable, and usable during flight disruptions.</p>
-
-        <div class="solution-components">
-          <div class="component">
-            <div class="component-number"> 01 AWARENESS</div>
-            <p>Awareness begins at the airport. QR codes are placed at gates, check-in counters, baggage claim areas, and seat pockets so passengers can access support immediately. Visual prompts and staff guidance direct people to the website during disruptions. The goal is to reach passengers at the exact moment confusion starts. <br><br> The intervention does not rely on passengers searching for rights themselves. It surfaces information in context. This shifts awareness from passive discovery to timely access.</p>
-          </div>
-
-          <div class="component">
-            <div class="component-number">02 ELIGIBILITY CHECKER</div>
-            <p>The Compensation Eligibility Checker helps passengers determine whether they qualify under APPR by entering flight details and disruption type. It walks users through structured inputs instead of forcing them to interpret legal text. <br><br> If eligible, it outlines next steps for filing a claim. If not, it explains why and references the relevant regulation. The focus is transparency. The outcome is not just yes or no. It is explained reasoning.</p>
-          </div>
-
-          <div class="component">
-            <div class="component-number">03 SIMPLIFIED APPR</div>
-            <p>The website presents APPR in structured, plain language without altering the original regulation. Complex policy text is supported with short explanations and organized by passenger situations rather than legal sections. <br><br> Content is broken into scannable sections to reduce cognitive load. The intent is comprehension under stress. It makes regulation readable without oversimplifying it.</p>
-          </div>
-        </div>
-    </section>
-
-    <!-- Validation -->
-    <section class="section">
-        <h3 class="section-label">Validation and Iteration</h3>
-
-        <p>A mid-fidelity prototype of the eligibility checker was tested with participants who had experienced flight disruptions. The goal was to evaluate clarity, navigation, and understanding of eligibility logic. <br><br> Participants were able to determine their eligibility and explain the reasoning behind outcomes. Testing identified gaps in airport search, back navigation, and accessibility features.</p>
-
-        <p style="margin-top: 2rem;"><strong>What this showed:</strong> The testing reinforced that clarity and error recovery were more critical than feature expansion.</p>
-    </section>
-
-    <!-- Results -->
-    <section class="section">
-        <h3 class="section-label">Reasons for the Solution</h3>
-
-        <div class="results-list">
-          <div class="result-box">
-            <h4>Information Gap</h4>
-            <p>Passengers are often unaware of APPR or misunderstand eligibility criteria. The solution directly addresses this gap through structured awareness and guided explanation.</p>
-          </div>
-
-          <div class="result-box">
-            <h4>Policy Complexity</h4>
-            <p>APPR language prioritizes legal precision over usability. The website reorganizes content around passenger needs without changing regulatory wording.</p>
-          </div>
-
-            <div class="result-box">
-            <h4>High Friction</h4>
-            <p>Disruptions create stress and cognitive overload. Structured guidance reduces decision fatigue and prevents unnecessary confusion during high-pressure moments.</p>
-          </div>
-
-            <div class="result-box">
-            <h4>Operational Strain</h4>
-            <p>Airline staff repeatedly answer eligibility questions. A self-service tool reduces repetitive explanations and redirects simple cases away from customer support channels.</p>
-          </div>
-
-
-
-        </div>
-   </section>
-
-
-    <section class="section">
-        <h3 class="section-label">What This Does</h3>
-
-        <div class="results-grid">
-
-          <div class="result-box">
-            <h4>For Passengers</h4>
-            <ul>
-              <li>Check eligibility for compensation independently, without waiting on hold or going through dense policy documents.</li>
-              <li>Understand why they qualify or do not qualify through structured explanations tied to regulation.</li>
-              <li>Receive next steps for submitting claims instead of guessing or submitting incomplete requests.</li>
-            </ul>
-          </div>
-
-          <div class="result-box">
-            <h4>For Airlines</h4>
-            <ul>
-              <li>Decrease repetitive eligibility inquiries that consume customer service resources during disruptions.</li>
-              <li>Lower volume of claims submitted by passengers who do not meet compensation criteria.</li>
-              <li>Provide consistent eligibility explanations aligned with APPR regulation, reducing perceived unfairness or misinformation.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="metrics-section">
-          <div class="component-number">HOW TO MEASURE SUCCESS</div>
-          <div class="metrics-list">
-            <span class="metric">How many people complete the eligibility checker</span>
-            <span class="metric">How long they spend reading the simplified rights</span>
-            <span class="metric">Whether customer service calls about eligibility actually go down</span>
-            <span class="metric">Ratio of approved to denied claims</span>
-            <span class="metric">Satisfaction scores after disruptions</span>
-          </div>
-        </div>
-    </section>
-
-    <!-- Limitations -->
-    <section class="section">
-        <h3 class="section-label">Limitations</h3>
-
-        <div class="limitations-list">
-          <div class="limitation-box">
-            <h4>Manual Input</h4>
-            <p>The checker depends on passenger-entered flight details. Incorrect or incomplete inputs may affect eligibility outcomes and reduce perceived accuracy.</p>
-          </div>
-
-          <div class="limitation-box">
-            <h4>No Live Data</h4>
-            <p>The prototype does not integrate real-time flight status. Eligibility assessments rely on static inputs rather than verified operational data.</p>
-          </div>
-
-          <div class="limitation-box">
-            <h4>Edge Cases</h4>
-            <p>Complex travel scenarios such as multi-airline itineraries may require manual review beyond structured rule logic.</p>
-          </div>
-
-          <div class="limitation-box">
-            <h4>Internet Access</h4>
-            <p>The website requires stable internet access, which may not always be available during travel disruptions.</p>
-          </div>
-        </div>
-    </section>
-
-    <!-- What's Next -->
-    <section class="section">
-        <h3 class="section-label">Next Steps</h3>
-
-        <div class="next-steps-list">
-          <div class="next-step-box">
-            <h4>Better Testing</h4>
-            <ul>
-              <li>Test with older passengers and varied travel classes to validate usability across groups.</li>
-              <li>Measure which airport touchpoints drive meaningful traffic to the website.</li>
-              <li>Assess whether understanding eligibility changes actual claim submission behavior.</li>
-            </ul>
-          </div>
-
-          <div class="next-step-box">
-            <h4>Better Implementation</h4>
-            <ul>
-              <li>Refine eligibility logic using anonymized airline compensation records.</li>
-              <li>Integrate real-time disruption data to reduce manual entry errors.</li>
-              <li>Launch with one airline or airport to measure operational impact.</li>
-            </ul>
-          </div>
-
-          <div class="next-step-box">
-            <h4>Scalability</h4>
-            <ul>
-              <li>Adapt content for international travelers using clear translation frameworks.</li>
-              <li>Modify logic to align with different regional passenger rights regulations.</li>
-              <li>Ensure strong performance across devices for real-time airport access.</li>
-            </ul>
-          </div>
-        </div>
-    </section>
-
-    <!-- Reflection -->
-    <section class="section">
-        <h3 class="section-label">Reflection</h3>
-        <div class="reflection-content">
-          <p class="lead">The core issue was not the absence of regulation. It was comprehension. APPR exists, but it is structured for compliance, not for passengers navigating uncertainty in real time.</p>
-          <p>This project focused on translating regulation into structured guidance at the moment of disruption. It does not attempt to redesign airline systems or policy frameworks.</p>
-          <p class="reflection-conclusion">The strongest takeaway is that accessibility is cognitive before it is visual. Clear structure, transparent logic, and contextual timing reduce confusion more effectively than adding more information ever will.</p>
-        </div>
-
-    </section>
+  <!-- Project summary -->
+  <div class="container">
+    <div style="padding: 2rem 0 3rem;">
+      <p class="lead-text">Air travel comes with rights that most passengers do not fully understand, including those under the Air Passenger Protection Regulations, or APPR. Project Inform Me Right raises awareness about these regulations through a website that includes a compensation eligibility checker and a more accessible version of the APPR. This helps passengers understand their rights and check if they qualify for compensation.</p>
+    </div>
   </div>
+
+  <!-- 02 THE CHALLENGE -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">02</span></div>
+    </div>
   </div>
+  <div class="container">
+    <div class="section-content">
+      <p class="lead-text reveal">What are the factors contributing to the communication gap between the passengers’ experiences and their expectations during a flight disruption?</p>
+      <div class="grid-3-2 reveal equal-height">
+        <div>
+          <h2 class="section-title">The Challenge</h2>
+          <p class="section-body">Passengers often only learn about their compensation rights after a delay or missed connection has already happened. Airlines already offer quality service and compensation exists for eligible passengers, but this information rarely reaches them when they need it.</p>
+          <p class="section-body">The objective was to identify why passengers lack clear information about their rights, understand how past experiences shape their expectations, and assess how their actual experience compares during a flight disruption.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2rem;">
+          <div class="card">
+            <span class="card-label">The focus</span>
+            <p>Uncover the barriers, expectations, and policy gaps behind why passengers stay uninformed about their compensation rights.</p>
+          </div>
+          <div class="card">
+            <span class="card-label">The Gap</span>
+            <p>Passengers already have access to awareness, communication, service, and compensation, but no one connects the dots for them when it matters most.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 UNDERSTANDING THE SYSTEM -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">03</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <div class="grid-2 reveal">
+        <div>
+          <h2 class="section-title">Understanding the System</h2>
+          <p class="section-body">There is already a system in place that works well under normal conditions. Airlines, airports, and regulatory boards each play their part in keeping passengers informed and served. 
+            <br> <br> But when a disruption occurs, two things fail. Passengers do not receive clear information about their rights, and they do not receive the level of service they were promised. This research looks closely at that failure.</p>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <span class="annotation">how the pieces connect →</span>
+          <div class="taped">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/connecting-flights/ecosystem-map.png" alt="Systems map of passenger rights, airline communication, and compensation">
+            </div>
+          </div>
+          <span class="img-caption">Fig. 01: Systems map of the current experience</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 04 RESEARCH -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">04</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <div class="grid-2 reveal">
+        <div>
+          <span class="annotation" style="display:block; margin-bottom:0.5rem;">artefact collage ↓</span>
+          <div class="pinned">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/connecting-flights/Research-snap.png" alt="Collage of research artefacts">
+            </div>
+          </div>
+          <span class="img-caption">Fig. 02: Research artefacts collage</span>
+        </div>
+        <div style="padding-top: 3rem;">
+          <h2 class="section-title">Research Approach</h2>
+          <p class="section-body">The research followed a mixed methods approach. It began with secondary research into the APPR and existing airline communication practices, which shaped a quantitative survey and a set of semi-structured qualitative interviews with passengers and subject matter experts.</p>
+          <p class="section-body">A final round of validation interviews tested the concept directly with people who had recently faced a flight disruption, to see if it actually addressed what they had described.</p>
+        </div>
+      </div>
+      <div class="grid-2 mt-4 equal-height">
+        <div class="card reveal">
+          <span class="card-label">Step 01: Secondary Research</span>
+          <p>Reviewed the APPR and existing literature on flight delays, missed connections, and airline policies before speaking with anyone.</p>
+        </div>
+        <div class="card reveal reveal-delay-1">
+          <span class="card-label">Step 02: Quantitative Research</span>
+          <p>A survey answered by 107 respondents, focused on international travelers aged 18 to 30, flying economy, with at least one connecting flight.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <span class="card-label">Step 03: Qualitative Research</span>
+          <p>In depth interviews with 12 participants to understand their real experiences, and 4 Subject Matter Experts (SMEs) to understand industry perspectives.</p>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <span class="card-label">Step 04: Validation Interviews</span>
+          <p>3 follow up interviews with participants who had recently faced a disruption, used to test and refine the findings.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 KEY INSIGHTS -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">05</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <h2 class="section-title reveal">Key Insights</h2>
+      <div class="grid-2 mt-2 equal-height">
+        <div class="insight-card reveal">
+          <span class="insight-num">Insight 01</span>
+          <p class="insight-heading">Insufficient communication breaks trust</p>
+          <p>Passengers lose trust in airlines due to poor communication, since airlines cannot always disclose disruption details.</p>
+        </div>
+        <div class="insight-card reveal reveal-delay-1">
+          <span class="insight-num">Insight 02</span>
+          <p class="insight-heading">Passengers don't know their rights</p>
+          <p>Passengers are unaware of their rights because there are no proactive measures from airlines to educate them.</p>
+        </div>
+        <div class="insight-card reveal">
+          <span class="insight-num">Insight 03</span>
+          <p class="insight-heading">The APPR document is hard to use</p>
+          <p>Passengers struggle to find and understand the regulations document because it holds so much information.</p>
+        </div>
+        <div class="insight-card reveal reveal-delay-1">
+          <span class="insight-num">Insight 04</span>
+          <p class="insight-heading">Eligibility for compensation is unclear</p>
+          <p>Passengers are unsure about their eligibility for compensation because it's difficult to find and understand.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 UNDERSTANDING THE USERS -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">06</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <h2 class="section-title">Understanding the Users</h2>
+      <p class="section-body" style="margin-bottom:2rem;">Insights were translated into personas and a journey map to ground every design decision in a real goal.</p>
+
+      <div class="grid-2">
+        <div class="reveal">
+          <span class="annotation">Persona A →</span>
+          <div class="pinned">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/connecting-flights/Persona1.png" alt="Passenger persona 1">
+            </div>
+          </div>
+          <span class="img-caption">Fig. 03: Passenger persona</span>
+        </div>
+        <div class="reveal">
+          <span class="annotation">Persona B →</span>
+          <div class="pinned">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/connecting-flights/Persona2.png" alt="Passenger persona 2">
+            </div>
+          </div>
+          <span class="img-caption">Fig. 04: Passenger persona</span>
+        </div>
+      </div>
+
+      <div class="grid-2 mt-3">
+        <div class="reveal">
+          <span class="annotation">Journey Map for Jose →</span>
+          <div class="pinned">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/connecting-flights/Journeymap1.png" alt="Passenger journey map during a flight disruption">
+            </div>
+          </div>
+          <span class="img-caption">Fig. 05: Flight delay journey map</span>
+        </div>
+        <div class="reveal">
+          <span class="annotation">Journey Map for Priya →</span>
+          <div class="pinned">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/connecting-flights/Journeymap2.png" alt="Passenger journey map during a flight disruption">
+            </div>
+          </div>
+          <span class="img-caption">Fig. 06: Flight disruption journey map</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 07 WHERE TO FOCUS -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">07</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="big-callout reveal">
+      <p class="big-callout-text"><em>The APPR already protects passengers during a disruption.</em><br>Most passengers never get to feel that protection.</p>
+      <p class="big-callout-sub">Every insight pointed back to the same root problem: passengers cannot access rights that already exist. The focus became creating awareness, simplifying the APPR, and helping passengers understand their eligibility, which is exactly what the research kept asking for.</p>
+    </div>
+  </div>
+
+  <!-- 08 SOLUTION -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">08</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <h2 class="section-title reveal">Project Inform-Me-Right</h2>
+      <p class="lead-text reveal">Create awareness about the APPR, and create a website with a compensation eligibility checker and a more accessible APPR.</p>
+
+      <!-- Part 1: Awareness -->
+      <div class="mt-4 reveal">
+        <span class="card-label" style="font-size:0.78rem; margin-bottom:1.5rem; display:block;">1. Awareness</span>
+        <div class="grid-2">
+          <div>
+            <p class="section-body">Posters and digital ads about the Inform-Me-Right website can be displayed at the boarding gates and waiting lounges where passengers naturally spend time. Brochures about the website can be included in flight seat pockets and handed out at airline counters, and the ads appear on in-flight entertainment systems.</p>
+            <p class="section-body">Staff at check in counters and customer service desks are trained to mention the website when a passenger runs into a disruption. The same message shows up earlier too, during ticket booking, in social media posts, and on animated screens around the airport, so a passenger sees it more than once before they actually need it.</p>
+          </div>
+          <div>
+            <span class="annotation">how a passenger finds it →</span>
+            <div class="taped">
+              <div class="img-placeholder" style="aspect-ratio: 16/7; background: #FFFFFF;">
+                <img src="images/connecting-flights/awareness.png" alt="Storyboard of a passenger discovering the website during a disruption" style="object-fit: contain;">
+              </div>
+            </div>
+            <span class="img-caption">Fig. 07: Passenger journey storyboard</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part 2: Eligibility Checker -->
+      <div class="mt-4 reveal">
+        <span class="card-label" style="font-size:0.78rem; margin-bottom:1.5rem; display:block;">2. Eligibility Checker</span>
+        <div class="grid-2">
+          <div>
+            <div class="final-design-frame">
+              <video controls playsinline>
+                <source src="images/connecting-flights/eligibility-checker.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div>
+            <p class="section-bod">Passengers enter a few basic details about their flight, including the departure and arrival airports, the date, and the reason. The checker weighs this against the rules in the APPR to work out whether the airline is responsible for the disruption.</p>
+            <p class="section-bod" style="margin-bottom:1rem;">If the passenger qualifies, the site lays out the steps to file a claim along with the exact section of the APPR that applies. If they do not qualify, it explains why in plain language and points to the rule behind that decision, so the outcome makes sense.</p>
+          </div>
+        </div>
+        <p class="section-body" style="margin-top:1.5rem;">Navigation stays intuitive and clear, directing users to relevant pages with minimal clicks, using concise plain language, and organizing content into short, distinct sections.</p>
+      </div>
+
+      <!-- Concept video -->
+      <div class="mt-4 reveal">
+        <span class="step-label">Concept Video</span>
+        <p class="step-desc">A short video walking through the concept, since this solution was presented rather than built.</p>
+        <div class="final-design-frame">
+          <video controls playsinline>
+            <source src="images/connecting-flights/Inform-Me-Ad.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 09 VALIDATION -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">09</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <div class="grid-3-2 reveal equal-height">
+        <div>
+          <h2 class="section-title">Validation and Iteration</h2>
+          <p class="section-body">The concept was tested with 3 participants who had recently experienced a flight disruption, as part of the research methodology's validation interview stage.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2rem;">
+          <div class="card">
+            <span class="card-label">Storyboard, Step 4</span>
+            <p>She finds it easy: the passenger now knows her rights and whether she is eligible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10 EXPECTED IMPACT -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">10</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <h2 class="section-title reveal">Expected Impact</h2>
+      <p class="lead-text reveal">Project Inform-Me-Right creates awareness about the APPR, enhances communication with accurate information, simplifies finding and understanding it, and clarifies compensation eligibility.</p>
+      <div class="grid-2 mt-3">
+        <div class="reveal">
+          <h4 style="font-size:1.1rem; margin-bottom:1.25rem;">For the Client</h4>
+          <ul class="impact-list">
+            <li>Streamlined communication with passengers</li>
+            <li>Greater transparency and satisfaction</li>
+            <li>Ready to use awareness materials</li>
+          </ul>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <h4 style="font-size:1.1rem; margin-bottom:1.25rem;">For the Users</h4>
+          <ul class="impact-list">
+            <li>Accessible information about their rights</li>
+            <li>A simplified compensation process</li>
+            <li>Proactive awareness during disruptions</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4 reveal">
+        <div class="card card-center">
+          <span class="card-label">Success Metrics</span>
+          <p>Track visitors, site duration, and compensation checks. Gather feedback on usefulness and clarity. Measure distribution and visibility of promotional materials. Monitor changes in compensation claims submitted.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 11 LIMITATIONS -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">11</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <div class="grid-3-2 reveal">
+        <div>
+          <h2 class="section-title">Limitations</h2>
+        </div>
+      </div>
+      <div class="grid-2 mt-3 equal-height">
+        <div class="constraint-card reveal">
+          <h4>Real Time Data</h4>
+          <p>Delays in real time flight data could affect compensation assessments.</p>
+        </div>
+        <div class="constraint-card reveal reveal-delay-1">
+          <h4>Internet Connectivity</h4>
+          <p>Passengers might struggle to use the site with poor internet connectivity.</p>
+        </div>
+        <div class="constraint-card reveal reveal-delay-2">
+          <h4>Accurate Input</h4>
+          <p>The eligibility checker relies on accurate input, and errors could cause wrong assessments.</p>
+        </div>
+        <div class="constraint-card reveal reveal-delay-3">
+          <h4>Scenario Coverage</h4>
+          <p>The site may not cover every scenario, requiring further clarification from airlines.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12 SCALABILITY -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">12</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <h2 class="section-title reveal">Scalability</h2>
+      <div class="grid-3 mt-2 equal-height">
+        <div class="card reveal">
+          <p>Regional expansion with local adaptations for each market.</p>
+        </div>
+        <div class="card reveal reveal-delay-1">
+          <p>Partner with the travel industry to extend reach.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <p>Integrate the website into different travel platforms.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 13 REFLECTION -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">13</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <div class="grid-2-3 reveal">
+        <div>
+          <h2 class="section-title">Reflection</h2>
+        </div>
+        <div>
+          <p class="lead-text">The regulation already existed. What passengers lacked was a way to understand it in the moment they actually needed it.</p>
+          <p class="section-body">This project focused on translating the APPR into clear guidance at the exact point of disruption, without touching airline systems or policy itself.</p>
+          <p class="section-body">The biggest takeaway is that accessibility starts as a cognitive problem before it becomes a visual one. Clear structure, transparent reasoning, and the right timing reduce confusion far more effectively than simply adding more information ever could.</p>
+          <span class="annotation" style="margin-top:1rem; transform:rotate(0.8deg);"> the real takeaway from this one</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Revati Hardikar</p>
+    <p>UX Researcher &amp; Designer</p>
+  </footer>
+
   <script>
-    // Smooth scroll reveal
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, observerOptions);
+    function openLightbox(src, alt) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-img').alt = alt || '';
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.section').forEach(section => {
-        observer.observe(section);
-      });
+    const tip = document.createElement('div');
+    tip.className = 'cursor-tip';
+    tip.textContent = '↗ View';
+    document.body.appendChild(tip);
+
+    document.querySelectorAll('.img-placeholder img').forEach(img => {
+      const p = img.closest('.img-placeholder');
+      p.classList.add('viewable');
+      p.addEventListener('click', () => openLightbox(img.src, img.alt));
+      p.addEventListener('mousemove', e => { tip.style.display = 'block'; tip.style.left = e.clientX + 'px'; tip.style.top = e.clientY + 'px'; });
+      p.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
     });
   </script>
-</body>
 
+</body>
 </html>

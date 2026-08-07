@@ -1,357 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Lighthouse Case Study</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Project Lighthouse - UHN x EnvisAGE</title>
   <link rel="stylesheet" href="lighthouse.css">
 </head>
-
-
 <body>
 
-<nav class="project-nav">
-  <div class="project-nav-container">
+  <nav>
     <a href="index.html" class="nav-logo">RH</a>
-  </div>
-</nav>
+    <a href="index.html#work" class="nav-back">← All Work</a>
+  </nav>
 
-  <!-- Hero Section -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕ Close</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
+  </div>
+
+  <!-- HERO -->
   <header class="hero">
-    <div class="container">
-      <div class="mainbox">
-        <div class="hero-meta">UX Research and Design Lead • 6 months • Team of 2</div>
-        <h1>UHN x EnvisAGE</h1>
-        <h2>Improving Application Experience for AgeTech Innovation</h2>
+    <div class="hero-grid">
+      <div class="hero-left">
+        <span class="case-badge">Industry Partnership Project with UHN</span>
+        <h1 class="hero-title">Beyond &nbsp; the &nbsp; Forms</h1>
+        <p class="hero-subtitle">Making a $47M AgeTech innovation program easier to discover, understand, and navigate.</p>
+        <p class="hero-meta">UX Research &amp; Design Lead &nbsp;·&nbsp; 8 Months &nbsp;·&nbsp; Team of 2</p>
+      </div>
+      <div class="hero-right">
+        <div class="video-box">
+          <video autoplay muted loop playsinline>
+            <source src="images/uhn/prototype.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
   </header>
 
-  <div class="mainbox">
-    
-    <!-- Roles Section -->
-    <section class="section">
-      <div class="container">
-        <h3 class="section-label">My Role</h3>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-label">Research Lead</div>
-            <div class="stat-detail">Stakeholder sessions, thematic analysis, insight synthesis</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-label">Design Lead</div>
-            <div class="stat-detail">Information architecture, wireframes, microsite design</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Problem Section -->
-    <section class="section">
-      <div class="container">
-        <h3 class="section-label">The Problem</h3>
-        <div class="problem-content">
-          <p class="lead">The EnvisAGE program is a national $47M AgeTech initiative aimed at accelerating innovation for Canada’s aging population by connecting Small-to-Medium Enterprises (SMEs) with Community Labs (CLs). </p>
-          <p>However, UHN KITE, as a Beachhead partner, struggles to attract enough qualified applicants to meet its target of seven successful applications in three years.</p>
-        </div>
-
-        <div class="research-question">
-          <span class="label">Research Goal</span>
-          <p>What problems do Community Labs (CLs) and Small-to-Medium Enterprises (SMEs) encounter when navigating the EnvisAGE application, particularly around understanding roles, accessing clear information, and managing funding requirements across different application stages?</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Research Approach -->
-    <section class="section">
-      <div class="container">
-        <h3 class="section-label">Research Approach</h3>
-        
-        <p class="intro-text">I focused on three areas where the breakdown was happening:</p>
-        
-        <div class="methodology-list">
-          <div class="method-item">
-            <div class="method-number">1</div>
-            <div class="method-content">
-              <h4>Where does the confusion begin?</h4>
-              <p>People try to find program details and figure out process requirements, but the information is insufficient.</p>
-            </div>
-          </div>
-
-          <div class="method-item">
-            <div class="method-number">2</div>
-            <div class="method-content">
-              <h4>What affects the collaboration?</h4>
-              <p>Between UHN, CLs, and SMEs, there is no clear mention of who is responsible for what tasks.</p>
-            </div>
-          </div>
-
-          <div class="method-item">
-            <div class="method-number">3</div>
-            <div class="method-content">
-              <h4>Why the number of applicants is less?</h4>
-              <p>Potential applicants outside existing networks and conferences never know about the program.</p>
-            </div>
-          </div>
-        </div>
-
-        <p class="intro-text" style="margin-top: 3rem;"> To dive deeper into these issues, I conducted stakeholder input sessions with SMEs, CLs, and program administrators. I analyzed their experiences through thematic coding to find patterns in what breaks down.</p>
-      </div>
-    </section>
-
-    <!-- Personas & Journey Maps -->
-    <section class="section">
-      <div class="container">
-        <h3 class="section-label">Understanding the Users</h3>
-        <p class="intro-text">Using the insights collected, I created personas and journey maps to understand who was struggling and where exactly they were getting stuck in the process.</p>
-        
-        <div class="artifact-note">
-          <p>These artifacts helped in mapping out the actual experience of the applicants. It highlighted what people actually go through when they try to apply.</p>
-        </div>
-
-        <div class="persona-container">
-          <h4>Persona: Community Lab Director</h4>
-          <div class="image-placeholder">
-            <!-- Replace with your actual persona image -->
-            <img src="images/uhn/persona-sarah.png" alt="Community Lab persona showing Sarah, Innovation Director" style="width: 100%; height: auto;">
-          </div>
-        </div>
-
-        <div class="persona-container" style="margin-top: 3rem;">
-          <h4>Persona: SME Operations Manager</h4>
-          <div class="image-placeholder">
-            <!-- Replace with your actual persona image -->
-            <img src="images/uhn/persona-cheng.png" alt="SME persona showing Cheng, Operations Manager" style="width: 100%; height: auto;">
-          </div>
-        </div>
-
-        <div class="journey-container" style="margin-top: 4rem;">
-          <h4>Journey Map: SME and CL combined</h4>
-          <div class="image-placeholder">
-            <!-- Replace with your actual journey map image -->
-            <img src="images/uhn/journeymap.png" alt="Journey map showing Community Lab's application experience from discovery to decision" style="width: 100%; height: auto;">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Key Findings -->
-    <section class="section">
-      <div class="container">
-        <h3 class="section-label">What I Found</h3>
-
-        <div class="findings-list">
-          <div class="finding-item">
-            <div class="finding-stat">1</div>
-            <div class="finding-content">
-              <h4>Unclear Roles Across Ecosystem</h4>
-              <p>There is broad confusion within Beachhead, CLs, and SMEs about who is responsible for what tasks. This makes planning of workloads and managing timelines difficult. It also creates inconsistent and unpredictable collaboration experiences.</p>
-            </div>
-          </div>
-
-          <div class="finding-item">
-            <div class="finding-stat">2</div>
-            <div class="finding-content">
-              <h4>Fragmented Information and Tools</h4>
-              <p>Applicants deal with scattered documents, forms, and guidance that do not connect well. This makes the process feel confusing and heavy. People spend time asking for clarification instead of moving forward.</p>
-            </div>
-          </div>
-
-          <div class="finding-item">
-            <div class="finding-stat">3</div>
-            <div class="finding-content">
-              <h4>Unclear and Inconsistent Funding Rules</h4>
-              <p>Funding details are not explained in a consistent or simple way. CLs and SMEs are unsure what costs are covered and when they will be reimbursed. Since funding affects decision-making, this uncertainty creates hesitation.</p>
-            </div>
-          </div>
-
-          <div class="finding-item">
-            <div class="finding-stat">4</div>
-            <div class="finding-content">
-              <h4>Low Program Visibility</h4>
-              <p>Many people hear about the program only through conferences or word-of-mouth. There is little public presence that explains its value or impact. This limits who applies and keeps the program within small circles.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Problem Focus -->
-    <section class="section">
-      <div class="container">
-        <h3 class="section-label">What I Learned</h3>
-        <div class="focus-box">
-          <p class="lead">The issue wasn’t the program’s structure or its funding. It was a lack of clarity.</p>
-          <p>The system was broken because applicants couldn't tell who was responsible for what, what support they would receive, or how funding actually worked. Instead of reducing uncertainty, each interaction added more of it. The challenge wasn’t to redesign the program. It was to make the existing process clear, transparent, and understandable at every step.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Solution -->
-    <section class="section">
-      <div class="container">
-        <h3 class="section-label">The Solution</h3>
-        <h2 class="solution-title">Project Lighthouse</h2>
-        <p class="solution-intro">A centralized information hub with a multichannel outreach strategy</p>
-<p>Information about EnvisAGE is scattered across different sources like the EnvisAGE website, old PDFs, doubt-clearance sessions, and conversations. This adds extra effort for applicants and makes the process feel inconsistent and hard to follow. UHN KITE, as a newer Beachhead, also lacks a clear space explaining its specific role.</p>
-<p style="margin-bottom: 3rem;">
-The solution is a microsite within UHN’s existing website that acts as a clear starting point for the partnership. It brings key information into one place, explains the structure, and guides applicants step by step instead of sending them across platforms. To make sure it reaches beyond conference circles, a focused marketing strategy supports the microsite through social media, email, and search visibility.</p>
-
-        <div class="solution-components">
-          <div class="component">
-            <div class="component-number">PART 1 : MICROSITE</div>
-            <p>EnvisAGE works with multiple Beachheads, but UHN KITE is relatively new to the program. There's no dedicated space that explains this partnership or what UHN specifically offers. Initially, the plan was to create a standalone website, but stakeholders already manage too many sites and wouldn't get approval for another one. </p>
-<p>A microsite solves this. It sits within UHN's existing website and acts as a landing point for the EnvisAGE partnership. It explains the collaboration, clarifies the basic structure, and branches out to more detailed information. Instead of hunting across platforms, applicants have one clear starting point that connects them to everything they need.</p>
-            
-            <div class="design-artifacts" style="margin-top: 3rem;">
-              <h4 style="margin-bottom: 2rem;">Design Process</h4>
-              
-              <div class="artifact-box" style="padding: 2rem; background: var(--bg-light); margin-bottom: 2rem;">
-                <h4 style="margin-bottom: 1rem;">User Stories</h4>
-                <p style="margin-bottom: 1.5rem;">Mapped out what different visitors need at each stage of their journey.</p>
-                <div class="image-placeholder">
-                  <img src="images/uhn/user-stories.png" alt="User stories for microsite showing different user needs" style="width: 100%; height: auto;">
-                </div>
-              </div>
-
-              <div class="artifact-box" style="padding: 2rem; background: var(--bg-light); margin-bottom: 2rem;">
-                <h4 style="margin-bottom: 1rem;">Wireframes</h4>
-                <p style="margin-bottom: 1.5rem;">Low fidelity layouts to test information architecture and content hierarchy.</p>
-                <div class="image-placeholder">
-                  <img src="images/uhn/wireframe.png" alt="Wireframes showing microsite structure and layout" style="width: 100%; height: auto;">
-                </div>
-              </div>
-
-              <div class="artifact-box" style="padding: 2rem; background: var(--bg-light);">
-                <h4 style="margin-bottom: 1rem;">High Fidelity Design</h4>
-                <p style="margin-bottom: 1.5rem;">Complete microsite design with branding, content, and interactions.</p>
-                <a href="https://www.figma.com/design/0iT3Un2HC1QHCaikxlc8G7/Website-Design?node-id=118-10&t=xQc1OLgPnMlt5rZa-1" target="_blank" style="display: inline-block; padding: 1rem 2rem; background: var(--neo-blue); color: white; text-decoration: none; font-weight: 600; margin-top: 1rem;">View Full Design in Figma</a>
-              </div>
-            </div>
-
-            <div class="component-detail" style="margin-top: 3rem;">
-              <strong>What's included:</strong>
-              <ul style="margin-top: 1rem;">
-                <li>Clear explanation of Beachhead role and UHN KITE capabilities</li>
-                <li>Step by step application process with timelines</li>
-                <li>Role breakdowns for SMEs, Labs, and partners</li>
-                <li>Success stories from completed partnerships</li>
-                <li>FAQ addressing recurring concerns</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="component">
-            <div class="component-number">PART 2 : MARKETING STRATEGY</div>
-            <p>The program needs to reach people outside the existing network. Right now, most SMEs and CLs only hear about EnvisAGE through conferences or referrals, which means a lot of qualified organizations never find out it exists.</p>
-<p>To make people aware of the collaboration, a marketing strategy supports discoverability beyond closed networks. This makes the program visible and keeps communication consistent so the right organizations can actually find it.</p>
-            
-            <div class="component-detail" style="margin-top: 2rem;">
-              <strong>Strategy Overview:</strong>
-              <ul style="margin-top: 1rem;">
-                <li><strong>Social Media:</strong>A 12-week LinkedIn and Twitter content plan aligned with the application cycle to build awareness, share program information, and drive traffic to the microsite.</li>
-                <li><strong>Email Marketing:</strong>A structured sequence of automated and manual emails that guide applicants through the process, clarify key questions, and reinforce deadlines.</li>
-                <li><strong>SEO Optimization:</strong>Technical setup of the microsite to improve search visibility, ensure accessibility, and make the program easier to discover organically.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Results -->
-    <section class="section">
-      <div class="container">
-        <h3 class="section-label">What This Could Do</h3>
-
-        <div class="results-list">
-          <div class="result-box">
-            <h4>For Applicants</h4>
-            <p>This microsite gives the applicants one clear place to understand everything about the program. Instead of piecing together information from different sources, they can quickly find accurate, up-to-date answers. That clarity reduces stress, builds trust, and makes it easier to move forward with confidence.</p>
-          </div>
-
-          <div class="result-box">
-            <h4>For UHN</h4>
-            <p>It cuts down on repetitive emails and confusion by putting all key information in one organized space. It presents the program in a more professional and credible way, reinforcing its role as a trusted Beachhead partner. The team can also see what’s working and improve outreach strategically, rather than guessing</p>
-          </div>
-        </div>
-
-        <div class="metrics-section">
-          <h4>How to Measure Success</h4>
-          <div class="metrics-list">
-            <span class="metric">Microsite traffic and time on page</span>
-            <span class="metric">Application completion rates</span>
-            <span class="metric">Email open and click-through rates</span>
-            <span class="metric">Social media engagement and referrals</span>
-            <span class="metric">Number of qualified applications submitted</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Limitations -->
-    <section class="section">
-      <div class="container">
-        <h3 class="section-label">What I Couldn't Change</h3>
-
-        <div class="limitations-list">
-          <div class="limitation-box">
-            <h4>Structural Constraints</h4>
-            <p>Because the collaboration was with UHN KITE and not EnvisAGE directly, the recommendations are limited to improving communication and user experience from UHN's point of view. It does not include altering the internal application process, funding structure, evaluation system, or any changes in the existing EnvisAGE structure.</p>
-          </div>
-          
-          <div class="limitation-box">
-            <h4>Sample Limitation</h4>
-            <p>The findings are based on a group of applicants who were already somewhat familiar with or involved in EnvisAGE, so the perspectives of completely new or unaware applicants may not be fully represented.</p>
-          </div>
-
-          <div class="limitation-box">
-            <h4>Qualitative Scope</h4>
-            <p>The research relies on interviews and subjective feedback, which reveal recurring pain points but do not quantify how widespread or statistically significant those challenges are.</p>
-          </div>
-
-          <div class="limitation-box">
-            <h4>Program Evolution</h4>
-            <p>As EnvisAGE continues to change and refine its processes, some identified issues may be temporary or specific to a particular program cycle.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reflection -->
-    <section class="section">
-      <div class="container">
-        <h3 class="section-label">Reflection</h3>
-        <div class="reflection-content">
-         <p class="lead">The core issue was not the intent of the program, but the way information was structured, communicated, and experienced by applicants.</p> <p>The research showed repeated breakdowns in role clarity, funding communication, application guidance, and visibility. Applicants were not struggling with the idea of the program itself; they were struggling to understand responsibilities, reimbursement rules, timelines, and where UHN KITE fit within the larger EnvisAGE ecosystem.</p> <p class="reflection-conclusion">This project demonstrates that even well-funded, well-intentioned programs can fail at the access stage. When roles, funding structures, and processes are not clearly articulated, participation becomes risky, inefficient, and limited to those already inside the network.</p>
-        </div>
-      </div>
-    </section>
+  <!-- Project summary -->
+  <div class="container">
+    <div style="padding: 2rem 0 3rem;">
+      <p class="lead-text">Improved discoverability and clarity in the envisAGE Agetech funding program by designing a centralized microsite and marketing strategy. It improved clarity around eligibility, steps, and submission requirements by bringing scattered guidance into a single experience.</p>
+    </div>
   </div>
 
+  <!-- 02 THE CHALLENGE -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">02</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <p class="lead-text reveal">By 2050, 1 in 5 people globally will be over the age of 60. Canada has invested over $150M in age-tech innovation, yet many solutions still fail to reach older adults. While ideas and funding exist, the programs that connect them remain difficult to discover.</p>
+      <div class="grid-3-2 reveal">
+        <div>
+          <h2 class="section-title">The Challenge</h2>
+          <p class="section-body">AgeTech refers to technologies designed specifically to improve the quality of life, independence, and healthcare access for aging populations.</p>
+          <p class="section-body">EnvisAGE is a $47M national Canadian program built to get AgeTech innovations out of the lab and into the hands of older adults. EnvisAGE funds and connects the people building these technologies with the environments needed to test and scale them.</p>
+          <p class="section-body">The goal was to understand exactly where and why applicants were getting stuck, and design a way to fix it.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2rem;">
+          <div class="card">
+            <span class="card-label">The Target</span>
+            <p style="margin:0;">UHN KITE needed 7 successful SME and Community Lab partnerships within 3 years and was falling short.</p>
+          </div>
+          <div class="card">
+            <span class="card-label">The Gap</span>
+            <p style="margin:0;">Most eligible organizations had never heard of the program. Those who knew couldn't navigate it on their own.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 PROGRAM STRUCTURE -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">03</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <div class="grid-2 reveal">
+        <div>
+          <h2 class="section-title">Understanding the Program Structure</h2>
+          <p class="section-body">EnvisAGE connects three partners. Small-Medium Enterprises (SMEs) bring the AgeTech innovations. Community Labs (CLs) provide real-world environments to pilot and validate those solutions with older adults. Beachheads sit in the middle, providing research expertise, matching the right SMEs with the right CLs, and guiding everyone.</p>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <span class="annotation">ecosystem map →</span>
+          <div class="taped">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/uhn/ecosystem.png" alt="Program ecosystem overview">
+            </div>
+          </div>
+          <span class="img-caption">Fig. 01: Program structure overview</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 04 RESEARCH -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">04</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <div class="grid-2 reveal">
+        <div>
+          <span class="annotation" style="display:block; margin-bottom:0.5rem;">sessions + synthesis ↓</span>
+          <div class="pinned">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/uhn/process-img.png" alt="Research process overview">
+            </div>
+          </div>
+          <span class="img-caption">Fig. 02: Research process overview</span>
+        </div>
+        <div style="padding-top: 3rem;">
+          <h2 class="section-title">Research Approach</h2>
+          <p class="section-body">A systematic three-step research approach was used to build a complete picture of the problem. Background research informed the stakeholder sessions, which in turn shaped the thematic analysis that surfaced the key design opportunities.</p>
+        </div>
+      </div>
+      <div class="grid-3 mt-4">
+        <div class="card reveal">
+          <span class="card-label">01 Secondary Research</span>
+          <h4>Landscape Understanding</h4>
+          <ul>
+            <li>AgeTech</li>
+            <li>EnvisAGE program structure</li>
+            <li>Partnership models</li>
+          </ul>
+        </div>
+        <div class="card reveal reveal-delay-1">
+          <span class="card-label">02 Stakeholder Sessions</span>
+          <h4>Direct Interviews</h4>
+          <ul>
+            <li>SMEs</li>
+            <li>Community Labs</li>
+            <li>Program Administrators</li>
+          </ul>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <span class="card-label">03 Analysis</span>
+          <h4>Synthesis</h4>
+          <ul>
+            <li>Thematic Coding</li>
+            <li>Key Insights</li>
+            <li>How Might We</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 INSIGHTS -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">05</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <h2 class="section-title reveal">What Was Found</h2>
+      <p class="section-body reveal" style="margin-bottom:1.5rem;">Across all the sessions, information gaps and low program visibility came up as the most consistent barriers.</p>
+      <span class="annotation reveal" style="transform:rotate(1.5deg); margin-bottom:1.5rem;">4 patterns kept showing up across all sessions ↓</span>
+      <div class="grid-2 mt-2">
+        <div class="insight-card reveal">
+          <span class="insight-num">Insight 01</span>
+          <p class="insight-heading">Limited program awareness</p>
+          <p>Most SMEs and CLs learned about EnvisAGE through internal networks or word of mouth, limiting awareness among potential applicants.</p>
+        </div>
+        <div class="insight-card reveal reveal-delay-1">
+          <span class="insight-num">Insight 02</span>
+          <p class="insight-heading">Scattered information</p>
+          <p>Program details were spread across PDFs, emails, and conversations, requiring applicants to gather information from multiple sources.</p>
+        </div>
+        <div class="insight-card reveal">
+          <span class="insight-num">Insight 03</span>
+          <p class="insight-heading">Unclear roles</p>
+          <p>SMEs, CLs, and Beachheads understood their responsibilities differently, causing confusion during applications and collaboration.</p>
+        </div>
+        <div class="insight-card reveal reveal-delay-1">
+          <span class="insight-num">Insight 04</span>
+          <p class="insight-heading">Limited early guidance</p>
+          <p>Applicants lacked proactive guidance at the start of the process and only discovered available support after confusion or errors had already occurred.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 USERS -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">06</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <h2 class="section-title">Understanding the Users</h2>
+      <p class="section-body" style="margin-bottom:2rem;">To better understand the experience, insights were translated into personas and journey maps to ground the design decisions in real user goals and pain points.</p>
+      <div class="grid-3">
+        <div class="reveal">
+          <span class="annotation">Persona A →</span>
+          <div class="pinned">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/uhn/UserPersona-Sarah-CL.png" alt="Sarah, Community Lab Director persona">
+            </div>
+          </div>
+          <span class="img-caption">Fig. 03 — Sarah, Community Lab Director</span>
+          <p style="margin-top:0.75rem; font-size:0.95rem;">Needs a structured process, consistent timelines, and straightforward collaboration tools.</p>
+        </div>
+        <div class="reveal">
+          <span class="annotation">Persona B →</span>
+          <div class="pinned">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/uhn/User-Persona-Cheng-SME.png" alt="Cheng, SME Operations Manager persona">
+            </div>
+          </div>
+          <span class="img-caption">Fig. 04 — Cheng, SME Operations Manager</span>
+          <p style="margin-top:0.75rem; font-size:0.95rem;">Needs clear guidance, centralized information, and well-defined partner roles.</p>
+        </div>
+        <div class="reveal">
+          <span class="annotation">Journey Map →</span>
+          <div class="pinned">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/uhn/journeymap.png" alt="SME and CL combined journey map">
+            </div>
+          </div>
+          <span class="img-caption">Fig. 05 — SME &amp; CL combined journey map</span>
+          <p style="margin-top:0.75rem; font-size:0.95rem;">Where the journey breaks down.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 07 REALIZATION -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">07</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="big-callout reveal">
+      <p class="big-callout-text"><em>EnvisAGE was designed to bridge innovation and opportunity.</em><br>For most applicants, the bridge itself was hard to find and harder to cross.</p>
+      <p class="big-callout-sub">Applicants came with strong ideas and real commitment. What they lacked was a reliable map through the roles, the funding structure, and the steps that followed.</p>
+    </div>
+  </div>
+
+  <!-- 08 SOLUTION -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">08</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <h2 class="section-title reveal">Project Lighthouse</h2>
+      <p class="lead-text reveal">A centralized information hub supported by a multi-channel outreach strategy.</p>
+
+      <!-- Part A intro + Sitemap 50/50 -->
+      <div class="mt-4 reveal">
+        <span class="card-label" style="font-size:0.78rem; margin-bottom:1.5rem; display:block;">Part A: Microsite</span>
+        <div class="grid-2">
+          <div>
+            <h4 style="font-size:1.3rem; letter-spacing:-0.01em; margin-bottom:1rem;">The site needed to address four key information gaps.</h4>
+            <p class="section-body">EnvisAGE information was scattered across PDFs, separate websites, and guidance conversations. A microsite within UHN's existing website brings everything into one place.</p>
+            <ul style="margin-top:1.25rem; color:#4A4A4A; line-height:1.9;">
+              <li>Program structure and role clarity</li>
+              <li>Application guidance with timelines</li>
+              <li>Funding explanations</li>
+              <li>FAQs and success stories</li>
+            </ul>
+          </div>
+          <div>
+            <span class="annotation">how it came together →</span>
+            <div class="taped">
+              <div class="img-placeholder" style="aspect-ratio: 16/7; background: #FFFFFF;">
+                <img src="images/uhn/sitemap.png" alt="Microsite sitemap and information architecture" style="object-fit: contain;">
+              </div>
+            </div>
+            <span class="img-caption">Fig. 06: Microsite sitemap</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fig 07: User Stories -->
+      <div class="mt-4 reveal">
+        <span class="step-label">Fig. 07: User Stories</span>
+        <p class="step-desc">Mapped what each visitor type needs at every stage, grounding every page decision in a real goal rather than assumed content.</p>
+        <div class="user-stories-grid">
+          <div class="pinned">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/uhn/User-story-SME.png" alt="User story: SME applicant">
+            </div>
+          </div>
+          <div class="pinned tilt-right">
+            <div class="img-placeholder ratio-16-9">
+              <img src="images/uhn/User-story-CL.png" alt="User story: Community Lab applicant">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fig 08 + 09: Wireframes → Final Design -->
+      <div class="mt-4 reveal">
+        <span class="annotation" style="transform: rotate(0deg); margin-bottom: 1rem;">lo-fi → hi-fi</span>
+        <div class="grid-2" style="align-items: start;">
+          <div>
+            <span class="step-label">Fig. 08: Wireframes</span>
+            <p class="step-desc">Low-fidelity layouts testing information architecture and content hierarchy before committing to visual design.</p>
+            <div class="taped tilt-left" style="margin-top: 0.5rem;">
+              <div class="img-placeholder ratio-16-9">
+                <img src="images/uhn/wireframe.png" alt="Wireframe layouts">
+              </div>
+            </div>
+            <span class="img-caption">Fig. 08: Wireframe explorations</span>
+          </div>
+          <div>
+            <span class="step-label">Fig. 09: Final Design</span>
+            <p class="step-desc">High-fidelity screens reflecting usability feedback, particularly around the funding page hierarchy and role clarity sections.</p>
+            <div class="final-design-frame">
+              <video autoplay muted loop playsinline>
+                <source src="images/uhn/prototype.mp4" type="video/mp4">
+              </video>
+              <div class="final-design-badge">Final Design</div>
+            </div>
+            <a href="https://www.figma.com/design/0iT3Un2HC1QHCaikxlc8G7" target="_blank" class="figma-btn">View in Figma</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part B -->
+      <div class="mt-4 reveal">
+        <span class="card-label" style="font-size:0.78rem; margin-bottom:1.5rem; display:block;">Part B: Awareness Strategy</span>
+        <h4 style="font-size:1.3rem; letter-spacing:-0.01em; margin-bottom:1rem;">People cannot apply to a program they've never heard about.</h4>
+        <p class="section-body">A multi-channel strategy makes the program discoverable beyond conference circuits and closed professional networks.</p>
+        <div class="grid-3 mt-3">
+          <div class="card">
+            <span class="card-label">LinkedIn Content Campaign</span>
+            <p>12-week content plan aligned with the application cycle, building awareness and driving traffic to the microsite.</p>
+          </div>
+          <div class="card">
+            <span class="card-label">Email Onboarding Sequence</span>
+            <p>Automated and manual emails guiding applicants through the process and reinforcing key deadlines.</p>
+          </div>
+          <div class="card">
+            <span class="card-label">SEO Infrastructure</span>
+            <p>Technical microsite setup for organic discoverability and accessibility compliance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 09 IMPACT -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">09</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <h2 class="section-title reveal">Expected Impact</h2>
+      <div class="grid-2 mt-3">
+        <div class="reveal">
+          <h4 style="font-size:1.1rem; margin-bottom:1.25rem;">For Applicants</h4>
+          <ul class="impact-list">
+            <li>Reduced uncertainty at every step</li>
+            <li>Clearer understanding of roles and timelines</li>
+            <li>Better onboarding experience</li>
+            <li>Greater confidence to apply</li>
+          </ul>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <h4 style="font-size:1.1rem; margin-bottom:1.25rem;">For UHN KITE</h4>
+          <ul class="impact-list">
+            <li>Fewer repetitive clarification requests</li>
+            <li>Improved program discoverability</li>
+            <li>More strategic, measurable outreach</li>
+            <li>More qualified applications submitted</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10 CONSTRAINTS -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">10</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <div class="grid-3-2 reveal">
+        <div>
+          <h2 class="section-title">Project Constraints</h2>
+          <p class="section-body">The project focused on communication, clarity, and experience design surrounding the program — not changes to its core structure.</p>
+        </div>
+      </div>
+      <div class="grid-3 mt-3">
+        <div class="constraint-card reveal">
+          <h4>Application System</h4>
+          <p>Could not modify the EnvisAGE application system or its internal processing flow.</p>
+        </div>
+        <div class="constraint-card reveal reveal-delay-1">
+          <h4>Funding Structure</h4>
+          <p>Funding amounts, reimbursement models, and financial terms were outside scope.</p>
+        </div>
+        <div class="constraint-card reveal reveal-delay-2">
+          <h4>Evaluation Process</h4>
+          <p>Application review criteria and decision-making processes were unchanged.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 11 REFLECTION -->
+  <div class="container">
+    <div class="section-break reveal">
+      <div class="section-break-inner"><span class="section-num">11</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-content">
+      <div class="grid-2-3 reveal">
+        <div>
+          <h2 class="section-title">Reflection</h2>
+        </div>
+        <div>
+          <p class="lead-text">EnvisAGE had the funding and the structure to make a real difference. What it was missing was a clear front door.</p>
+          <p class="section-body">This project was a reminder that designing for clarity can be just as impactful as designing something new. Access barriers don't always come from broken technology. Sometimes they come from broken communication.</p>
+          <span class="annotation" style="margin-top:1rem; transform:rotate(0.8deg);">— the real takeaway from this one</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Revati Hardikar</p>
+    <p>UX Researcher &amp; Designer</p>
+  </footer>
+
   <script>
-    // Smooth scroll reveal
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, observerOptions);
+    function openLightbox(src, alt) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-img').alt = alt || '';
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.section').forEach(section => {
-        observer.observe(section);
-      });
+    const tip = document.createElement('div');
+    tip.className = 'cursor-tip';
+    tip.textContent = '↗ View';
+    document.body.appendChild(tip);
+
+    document.querySelectorAll('.img-placeholder img').forEach(img => {
+      const p = img.closest('.img-placeholder');
+      p.classList.add('viewable');
+      p.addEventListener('click', () => openLightbox(img.src, img.alt));
+      p.addEventListener('mousemove', e => { tip.style.display = 'block'; tip.style.left = e.clientX + 'px'; tip.style.top = e.clientY + 'px'; });
+      p.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
     });
-  </script>
-</body>
 
+    const heroVideo = document.querySelector('.video-box video');
+    if (heroVideo) heroVideo.addEventListener('click', () => heroVideo.paused ? heroVideo.play() : heroVideo.pause());
+  </script>
+
+</body>
 </html>
